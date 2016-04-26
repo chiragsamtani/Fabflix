@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="jquery_1.3.js" language="javascript"></script>
+    <script src="jquery.autocomplete.js"></script> 
+	<title>FabFlix | Home</title>
+</head>
+
+	<script>
+	function whenerror(obj){
+		var noimg="NIA.jpg";
+		obj.src=noimg;
+	}
+	</script>
+
+<body>
+	<div class="title">
+		<h1>FabFlix</h1>
+	</div>
+	 <section class="searchbar">
+		<form action="Search" method="get">   
+			<input type="search" id="sTitle" placeholder="Search..." name="title" />
+			<script>
+				$("#sTitle").autocomplete("getData.jsp");
+			</script>			
+			<button>Search</button>
+		</form>
+	</section>
+
+	<div class="tinyspacer">&nbsp;</div></td>
+	<div class="tinyspacer">&nbsp;</div></td>
+
+	<div id="nav">
+	<nav>
+	<ul>
+		<li><a href="Main.html">Home</a></li>
+		<li><a href="advanceSearch.html">Advanced Search</a></li>
+ 		   <ul style="float:right;list-style-type:none;">
+    			<li><a class="active" href="addToCart.jsp">My Cart</a></li>
+  		   </ul>
+	</ul>
+	</nav>
+	</div>
+
+	<div class="tinyspacer">&nbsp;</div></td>
+
+	<div class="subtitle">
+		<h3>Trending Titles:</h3>
+	</div>
+
+	<div class="tinyspacer">&nbsp;</div></td>
+	<div class="tinyspacer">&nbsp;</div></td>
+
+	<div class="content" align="center">
+	<table width="900" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>
+		<div class="overlap"><img class="top" src="http://ia.imdb.com/media/imdb/01/I/89/91/10m.gif" alt="case" width=100% /></div>
+		</div>
+		</td>
+		
+		<td rowspan="6" width="50">&nbsp;</td>
+		<td>
+		<div class="overlap"><img class="top" src="http://ia.imdb.com/media/imdb/01/I/56/45/61m.jpg" alt="case" />
+		</div>
+		</td>
+		
+		<td rowspan="6" width="50">&nbsp;</td>
+		<td>
+		<div class="overlap"><img class="top" src="http://ia.imdb.com/media/imdb/01/I/19/65/68m.jpg" alt="case" />
+		</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td style="text-align:center;"><b>A Clockwork Orange(1971)</b></td>
+		<td style="text-align:center;"><b>A Nightmare On Elm Street(1984)</b></td>
+   		<td style="text-align:center;"><b>Batman Begins(2005)</b></td>
+	</tr>
+ 	
+	<tr>
+		<td style="text-align:center;"><i>director: Stanley Kubrik</i></td>
+		<td style="text-align:center;"><i>director: Wes Craven</i></td>
+		<td style="text-align:center;"><i>director: Christopher Nolan</i></td>
+	</tr>
+	
+	<tr>
+		<td style="text-align:center;"><a href="SeeMovie?movieId=907004">&gt; more info</a></td>
+		<td style="text-align:center;"><a href="SeeMovie?movieId=135011">&gt; more info</a></td>
+ 		<td style="text-align:center;"><a href="SeeMovie?movieId=907007">&gt; more info</a></td>
+	</tr>
+                   
+	<tr>
+		<td align="center">
+		<a href= "ViewCart?movieTitle=A Clockwork Orange(1971)">
+		<button class="buttongreen2" >
+		<div class="button-title">Add to cart</div>
+		<div class="price">$9.99</div>
+		</button> 
+		</a>
+		</td>
+	
+		<td align="center">
+		<a href= "ViewCart?movieTitle=A Nightmare On Elm Street(1984)">
+		<button class="buttongreen2" >
+		<div class="button-title">Add to cart</div>
+		<div class="price">$9.99</div>
+		</button> 
+		</a>
+		</td>
+		<td align="center">
+		<a href= "ViewCart?movieTitle=Batman Begins(2005)">
+		<button class="buttongreen2" >
+		<div class="button-title">Add to cart</div>
+		<div class="price">$9.99</div>
+		</button> 
+		</a>
+		</td>
+
+	</tr>
+	</table>
+	</div>
+
+	<div class="tinyspacer">&nbsp;</div>
+ 	<div class="tinyspacer">&nbsp;</div>
+	
+	<div class="subtitle">
+		<h3>Guided Search:</h3>
+	</div>
+
+	<div class = "content" align="center">
+	<table width="850" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<div class="subtitle">
+		<td width="850" style="text-align:center;"><h4>Browse Movie by Title</h4></td>
+		</div>
+	</tr>
+	
+	<tr>
+		<td colspan="2"><div class="tinyspacer">&nbsp;</div></td>
+	</tr>
+	
+	<tr>
+		<td><table width="850" border="0" cellspacing="0" cellpadding="0">
+		
+		<tr>
+		<td valign="top" style="text-align:center;"><a href="Search?letter=0">0</a> | <a href="Search?letter=1">1</a> | <a href="Search?letter=2">2</a> | <a href="Search?letter=3">3</a> | <a href="Search?letter=4">4</a> | <a href="Search?letter=5">5</a> | <a href="Search?letter=6">6</a> | <a href="Search?letter=7">7</a> | <a href="Search?letter=8">8</a> | <a href="Search?letter=9">9</a><br />&nbsp;<br /><a href="Search?letter=A">A</a> | <a href="Search?letter=B">B</a> | <a href="Search?letter=C">C</a> | <a href="Search?letter=D">D</a> | <a href="Search?letter=E">E</a> | <a href="Search?letter=F">F</a> | <a href="Search?letter=G">G</a> | <a href="Search?letter=H">H</a> | <a href="Search?letter=I">I</a> | <a href="Search?letter=J">J</a> | <a href="Search?letter=K">K</a> | <a href="Search?letter=L">L</a> | <a href="Search?letter=M">M</a> | <a href="Search?letter=N">N</a> | <a href="Search?letter=0">O</a> | <a href="Search?letter=P">P</a> | <a href="Search?letter=Q">Q</a> | <a href="Search?letter=R">R</a> | <a href="Search?letter=S">S</a> | <a href="Search?letter=T">T</a> | <a href="Search?letter=U">U</a> | <a href="Search?letter=V">V</a> | <a href="Search?letter=W">W</a> | <a href="Search?letter=X">X</a> | <a href="Search?letter=Y">Y</a> | <a href="Search?letter=Z">Z</a><br />&nbsp;<br />
+		</td>
+		</tr>
+		</table>
+		</td>
+                        
+		</tr>
+	</table>
+	</div>
+
+	<div class="tinyspacer">&nbsp;</div>
+	<div class="tinyspacer">&nbsp;</div>
+	<div class="tinyspacer">&nbsp;</div>
+
+	<div class="content" align="center">
+	<table width="850" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<div class="subtitle">
+		<td width="850" style="text-align:center;"><h4>Browse Movie by genre</h4></td>
+		</div>
+	</tr>
+	
+	<tr>
+		<td colspan="2"><div class="tinyspacer">&nbsp;</div></td>
+	</tr>
+	
+	<tr>
+		<td><table width="850" border="0" cellspacing="0" cellpadding="0">
+		
+		<tr>
+		<td style="text-align:left;">
+		<a href="Search?genre=Action">Action</a><br />
+		<a href="Search?genre=arts">Art</a><br />
+		<a href="Search?genre=Adventure">Adventure</a><br />
+		<a href="Search?genre=advanture">Adventures</a><br />
+		<a href="Search?genre=Animation">Animation</a><br />
+		<a href="Search?genre=classic">Classic</a><br />
+		<a href="Search?genre=Comedy">Comedy</a><br />
+		<a href="Search?genre=Commedy">Comedies</a><br />
+		<a href="Search?genre=Coming-of-Age-Drama">Coming of Age Drama</a><br />
+		<a href="Search?genre=Crime">Crime</a><br />
+		<a href="Search?genre=Crime/Gangster">Crime/Gangster</a><br />
+		<a href="Search?genre=Detective">Detective</a><br />
+		<a href="Search?genre=Documentary">Documentary</a><br />
+		<a href="Search?genre=Drama">Drama</a><br />
+		<a href="Search?genre=epics">Epics</a><br />
+		<a href="Search?Epics/Historical">Epics/Historical</a><br />
+		</td>
+
+		<td style="text-align:left;">
+		<a href="Search?genre=Family">Family</a><br />
+		<a href="Search?genre=Fantasy">Fantasy</a><br />
+		<a href="Search?genre=Film-Noir">Film-Noir</a><br />
+		<a href="Search?genre=Foreign">Foreign</a><br />
+		<a href="Search?genre=Gangster">Gangster</a><br />
+		<a href="Search?genre=Horror">Horror</a><br />
+		<a href="Search?genre=Indie">Indie</a><br />
+		<a href="Search?genre=James Bond">James Bond</a><br />
+		<a href="Search?genre=kid">Kids</a><br />
+		<a href="Search?genre=Love">Love</a><br />
+		<a href="Search?genre=Music">Music</a><br />
+		<a href="Search?genre=Musical/Performing Arts">Musical/Performing Arts</a><br />
+		<a href="Search?genre=musial">Musicals</a><br />
+		<a href="Search?genre=Musical">Musicals</a><br />
+		<a href="Search?genre=Musicals">Musicals</a><br />
+		<a href="Search?genre=Mystery">Mystery</a><br />
+		</td>
+		
+		<td style="text-align:left;">
+		<a href="Search?genre=Roman">Roman</a><br />
+		<a href="Search?genre=Romance">Romance</a><br />
+		<a href="Search?genre=SCI/FI">SCI/FI</a><br />
+		<a href="Search?genre=Sci-Fi">Sci-Fi</a><br />
+		<a href="Search?genre=SciFi">SciFi</a><br />
+		<a href="Search?genre=Science Fiction">Science Fiction</a><br />
+		<a href="Search?genre=Science Fiction/Fantasy"> Science Fiction/Fantasy<br />
+		<a href="Search?genre=Short">Short</a><br />
+		<a href="Search?genre=spy">Spy</a><br />
+		<a href="Search?genre=Suspense">Suspense</a><br />
+		<a href="Search?genre=Thriller">Thriller</a><br />
+		<a href="Search?genre=Tragedy">Tragedy</a><br />
+		<a href="Search?genre=War">War</a><br />
+		<a href="Search?genre=Western">Western</a><br />
+		<a href="Search?genre=Westerns">Westerns</a><br />
+		</td>
+		</tr>
+		</table>
+		</td>
+                        
+		</tr>
+	</table>
+	</div>
+	
+
+	
+	<div class="tinyspacer">&nbsp;</div>
+	<div class="tinyspacer">&nbsp;</div>
+	<div class="tinyspacer">&nbsp;</div>
+
+	<div class="footer" align="center"><a href="Main.html">Home</a> | <a href="advanceSearch.html">Advanced Search</a> | <a href="addToCart.jsp">My Cart</a>
+	</div>
+</body>
+</html>	
+
+	
